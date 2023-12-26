@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="time" ></h1>
+
+
+<script>
+  
+    // console.log(`${todayDate}/${month}/${Year} ${hours}:${min}:${sec}`)
+
+   
+
+    function Mytime(){
+        let myTime = new Date()
+    let todayDate= myTime.getDate()
+    let month = myTime.getMonth()+1
+    let Year = myTime.getFullYear()
+    let hours = myTime.getHours()
+    let min = myTime.getMinutes()
+    let sec = myTime.getSeconds()
+        
+        let a  = `${todayDate}/${month}/${Year} ${hours}:${min}:${sec}`
+
+        document.getElementById('time').innerHTML=a
+    }
+
+    setInterval(Mytime,1000)
+</script>
+</body>
+</html>

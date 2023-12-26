@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #btn1{
+            background-color: green;
+            border: none;
+            width: 100px;
+        }
+        #btn2{
+            background-color: red;
+            border: none;
+            width: 100px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="Inc()" id="btn1">+</button>
+    <p id="output"></p>
+    <button onclick="Dec()" id="btn2" >-</button>
+    </div>
+    
+
+    <script>
+        let value = 0
+        function Inc(){
+            value++
+            document.getElementById("output").innerHTML=value
+        }
+        function Dec(){
+            value--
+            document.getElementById("output").innerHTML = value
+        }
+    </script>
+</body>
+</html>
